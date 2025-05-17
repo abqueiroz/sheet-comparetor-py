@@ -82,6 +82,6 @@ class SpreadsheetComparator:
         missing_in_expected = [val for val in sheet_values if val not in expected_values]
         missing_in_sheet = [val for val in expected_values if val not in sheet_values]
         return {
-            "missingInExpected": missing_in_expected,
+            "missingInMapping": missing_in_expected,
             "missingInSheet": missing_in_sheet
         }
